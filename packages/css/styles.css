@@ -25,7 +25,7 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-
+  --nav-logo: url(packages/images/signature.png);
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
 
@@ -85,6 +85,7 @@ body.dark-theme {
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --nav-logo: url(packages/images/signature(4).png);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -218,6 +219,9 @@ img {
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  background-image: var(--nav-logo);
+  width: 15%;
+  height: 15%;
 }
 
 .nav__logo:hover {
@@ -686,7 +690,7 @@ img {
 .services__content {
   position: relative;
   background-color: var(--container-color);
-  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  padding: 2.5rem 0.5rem 1.25rem 1.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
@@ -696,17 +700,11 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.services__icon {
-  display: block;
-  font-size: 1.5rem;
-  color: var(--first-color);
-  margin-bottom: var(--mb-1);
-}
 .services__p {
   font-size: var(--small-font-size);
   text-align: left;
   width: (2, 1fr);
-  padding: 10px;
+ 
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
   inline-size: 180px;
@@ -716,15 +714,7 @@ img {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
-}
 
-.services__button {
-  cursor: pointer;
-  font-size: var(--small-font-size);
-}
-
-.services__button:hover .button__icon {
-  transform: translateX(0.25rem);
 }
 
 .services__modal {
@@ -774,16 +764,7 @@ img {
   cursor: pointer;
 }
 
-.services__modal-icon {
-  color: var(--first-color);
-  margin-right: var(--mb-0-25);
-}
 
-/* Active Modal */
-.active-modal {
-  opacity: 1;
-  visibility: visible;
-}
 
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
@@ -924,9 +905,7 @@ img {
 }
 
 .contact__icon {
-  font-size: 1.5rem;
-  color: var(--first-color);
-  margin-right: var(--mb-0-75);
+  width: 30px;
 }
 
 .content__title {
